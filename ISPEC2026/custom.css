@@ -915,7 +915,14 @@ a {
     margin: 0px 0px;
     width: auto;
   }
-
+.about-text {
+  text-align: justify;        /* 两端对齐 */
+  text-justify: inter-word;   /* 英文单词间距对齐更自然 */
+  white-space: normal;        /* 正常换行 */
+  overflow-wrap: break-word;  /* 太长时允许换行 */
+  word-break: normal;         /* 正常英文断词 */
+  hyphens: auto;              /* 英文自动断词，效果更好 */
+}
   .mastnav .mastnav-nav > li > a {
     white-space: normal;
     word-break: break-word;
